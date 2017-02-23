@@ -8,14 +8,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Ptg') }}</title>
 
     <!-- Styles -->
     <link href="{{ url('css/app.css') }}" rel="stylesheet">
+    <link href="{{ url('css/style.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
+        window.Ptg = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
@@ -37,7 +38,7 @@
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                        <span class="btn btn-danger btn-small">TG</span>
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'TG') }}
                     </a>
                 </div>
 
